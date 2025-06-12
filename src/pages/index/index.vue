@@ -51,7 +51,7 @@ const list = [
         path: "/pages/function/UIComponents/refreshScrollView",
       },
       {
-        cover: "",
+        cover: "https://superlwb0608.top/img/frontendTool/func/lazyImage.gif",
         title: "异步懒加载图片",
         path: "/pages/function/UIComponents/asyncLazyImage",
       },

@@ -1,11 +1,13 @@
 <template>
   <view class="func" @click="handleClick">
-    <image :src="func.cover"></image>
+    <!-- <image :src="func.cover"></image> -->
+    <lazy-image :src="func.cover" height="250" width="200" unit="upx" />
     <view class="func-title">{{ func.title }}</view>
   </view>
 </template>
 
 <script setup>
+import LazyImage from "@/components/LazyImage.vue";
 const props = defineProps({
   func: {
     type: Object,
@@ -31,17 +33,12 @@ const handleClick = () => {
   width: 100%;
   height: 400upx;
   background-color: #fff;
+  position: relative;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  > image {
-    width: 60%;
-    height: 60%;
-    background-color: aquamarine;
-  }
 
   .func-title {
     margin-top: 20upx;
