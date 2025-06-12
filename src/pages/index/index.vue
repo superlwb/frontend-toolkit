@@ -9,7 +9,7 @@
         :more="item.more"
         :show="item.show"
       />
-      <BlockDown :show="item.show" v-if="item.more">
+      <BlockDown :show="item.show" v-if="item.more" :init="item.init">
         <Func v-for="(func, index) in item.funcList" :func="func" :key="index" />
       </BlockDown>
     </view>
@@ -29,6 +29,7 @@ const list = [
     marginLeft: 20,
     more: false,
     show: false,
+    init: false,
     funcList: [],
   },
   {
@@ -36,17 +37,23 @@ const list = [
     size: 35,
     marginLeft: 0,
     more: true,
-    show: false,
+    show: true,
+    init: true,
     funcList: [
       {
-        cover: "../static/func/pullMenu.gif",
+        cover: "https://superlwb0608.top/img/frontendTool/func/pullMenu.gif",
         title: "下拉菜单（无限制高度）",
         path: "/pages/function/UIComponents/pullMenu",
       },
       {
-        cover: "",
+        cover: "https://superlwb0608.top/img/frontendTool/func/scroll.gif",
         title: "滚动加载组件",
         path: "/pages/function/UIComponents/refreshScrollView",
+      },
+      {
+        cover: "",
+        title: "异步懒加载图片",
+        path: "/pages/function/UIComponents/asyncLazyImage",
       },
       {
         cover: "",
@@ -60,6 +67,7 @@ const list = [
     marginLeft: 0,
     more: true,
     show: false,
+    init: false,
     funcList: [
       {
         cover: "",
@@ -73,6 +81,7 @@ const list = [
     marginLeft: 0,
     more: true,
     show: false,
+    init: false,
     funcList: [
       {
         cover: "",
@@ -86,6 +95,7 @@ const list = [
     marginLeft: 0,
     more: true,
     show: false,
+    init: false,
     funcList: [
       {
         cover: "",

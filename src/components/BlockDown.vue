@@ -6,7 +6,13 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  init: {
+    type: Boolean,
+    default: false,
+  },
 });
+
+const emits = defineEmits(["update:show"]);
 
 const height = ref("0");
 const UIHeight = ref("0");
@@ -33,6 +39,17 @@ onMounted(() => {
       .select(".func-list")
       .boundingClientRect((data) => {
         height.value = data.height + "px";
+        if (props.init && props.show) {
+          UIHeight.value = height.value;
+        }
+
+        // 如果init是false ， show是true，那更改show
+        if (!props.init && props.show) {
+          emits("update:show", false);
+        }
+        if (props.init && !props.show) {
+          emits("update:show", true);
+        }
       })
       .exec();
   });
