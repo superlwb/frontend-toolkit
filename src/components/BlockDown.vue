@@ -58,7 +58,7 @@ onMounted(() => {
 
 <template>
   <view class="wrapper" :style="{ height: UIHeight }">
-    <view class="func-list">
+    <view class="func-list" :class="show ? 'show' : 'hidden'">
       <slot></slot>
     </view>
   </view>
@@ -81,6 +81,16 @@ onMounted(() => {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--margin-bottom);
+    transition: 0.3s opacity linear;
+  }
+
+  // 缩放时给元素增加透明过渡动画
+  .show {
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
   }
 }
 </style>

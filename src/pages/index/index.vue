@@ -37,23 +37,28 @@ const list = [
     size: 35,
     marginLeft: 0,
     more: true,
-    show: true,
-    init: true,
+    show: false,
+    init: false,
     funcList: [
       {
-        cover: "https://superlwb0608.top/img/frontendTool/func/pullMenu.gif",
+        cover: "https://superlwb0608.top/img/frontendTool/func/pullMenu.jpg",
         title: "下拉菜单（无限制高度）",
-        path: "/pages/function/UIComponents/pullMenu",
+        path: "/pages/function/UIComponents/pullMenuDemo",
       },
       {
-        cover: "https://superlwb0608.top/img/frontendTool/func/scroll.gif",
+        cover: "https://superlwb0608.top/img/frontendTool/func/scroll.jpg",
         title: "滚动加载组件",
-        path: "/pages/function/UIComponents/refreshScrollView",
+        path: "/pages/function/UIComponents/refreshScrollViewDemo",
       },
       {
-        cover: "https://superlwb0608.top/img/frontendTool/func/lazyImage.gif",
-        title: "异步懒加载图片",
-        path: "/pages/function/UIComponents/asyncLazyImage",
+        cover: "https://superlwb0608.top/img/frontendTool/func/lazyImage.jpg",
+        title: "懒加载图片",
+        path: "/pages/function/UIComponents/lazyImageDemo",
+      },
+      {
+        cover: "https://superlwb0608.top/img/frontendTool/func/requestButton.jpg",
+        title: "请求按钮",
+        path: "/pages/function/UIComponents/requestButtonDemo",
       },
       {
         cover: "",
@@ -94,8 +99,8 @@ const list = [
     size: 35,
     marginLeft: 0,
     more: true,
-    show: false,
-    init: false,
+    show: true,
+    init: true,
     funcList: [
       {
         cover: "",

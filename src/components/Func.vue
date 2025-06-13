@@ -1,13 +1,13 @@
 <template>
   <view class="func" @click="handleClick">
     <!-- <image :src="func.cover"></image> -->
-    <lazy-image :src="func.cover" height="250" width="200" unit="upx" />
+    <LazyMedia :src="func.cover" :height="250" :width="200" unit="upx" />
     <view class="func-title">{{ func.title }}</view>
   </view>
 </template>
 
 <script setup>
-import LazyImage from "@/components/LazyImage.vue";
+import LazyMedia from "@/components/LazyMedia.vue";
 const props = defineProps({
   func: {
     type: Object,

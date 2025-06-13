@@ -1,6 +1,5 @@
 {
   "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
       "path": "pages/index/index",
       "style": {
@@ -8,21 +7,27 @@
       }
     },
     {
-      "path": "pages/function/UIComponents/pullMenu",
+      "path": "pages/function/UIComponents/pullMenuDemo",
       "style": {
         "navigationBarTitleText": "下拉菜单（无限制高度）"
       }
     },
     {
-      "path": "pages/function/UIComponents/refreshScrollView",
+      "path": "pages/function/UIComponents/refreshScrollViewDemo",
       "style": {
         "navigationBarTitleText": "滚动加载组件"
       }
     },
     {
-      "path": "pages/function/UIComponents/asyncLazyImage",
+      "path": "pages/function/UIComponents/lazyImageDemo",
       "style": {
-        "navigationBarTitleText": "异步懒加载图片"
+        "navigationBarTitleText": "懒加载图片"
+      }
+    },
+    {
+      "path": "pages/function/UIComponents/requestButtonDemo",
+      "style": {
+        "navigationBarTitleText": "请求按钮"
       }
     }
   ],
